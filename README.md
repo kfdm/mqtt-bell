@@ -6,7 +6,7 @@ Using an ESP32 DevKit, to connect a Reception Bell to MQTT for notifications.
 
 ## Parts List
 
-![circuit](images/circuit.png)
+![circuit](images/circuit.svg)
 
 - [Tabletop Reception Bell](https://www.amazon.co.jp/-/en/gp/product/B08LTJP3NH/)
 - [ESP32-DevKitC V4](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/hw-reference/esp32/get-started-devkitc.html)
@@ -18,3 +18,4 @@ Using an ESP32 DevKit, to connect a Reception Bell to MQTT for notifications.
 
 - https://aaronparecki.com/2017/11/13/5/kickstarter-desk-bell
 - https://www.jeffgeerling.com/blog/2021/raspberry-pi-iot-notification-bell
+~

@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Circuit Diagram, cdlibrary.dll 4.0.0.0 -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" width="340" height="180"
+<svg version="1.1" width="360" height="180"
 	xmlns="http://www.w3.org/2000/svg">
+	<text x="220" y="50" style="font-family:Arial;font-size:11px;text-anchor:start" dominant-baseline="middle" transform="rotate(0, 220, 50)">T1</text>
+	<text x="280" y="70" style="font-family:Arial;font-size:11px;text-anchor:start" dominant-baseline="middle" transform="rotate(0, 280, 70)">S1</text>
+	<text x="320" y="70" style="font-family:Arial;font-size:11px;text-anchor:start" dominant-baseline="middle" transform="rotate(0, 320, 70)">D1</text>
 	<line x1="80" y1="140" x2="310" y2="140" style="stroke:rgba(255, 0, 0, 255);stroke-linecap:square;stroke-width:2" />
 	<line x1="70" y1="90" x2="210" y2="90" style="stroke:rgba(34, 139, 34, 255);stroke-linecap:square;stroke-width:2" />
 	<line x1="70" y1="90" x2="70" y2="98" style="stroke:rgba(34, 139, 34, 255);stroke-linecap:square;stroke-width:2" />
@@ -28,12 +31,11 @@
 	<line x1="270" y1="30" x2="270" y2="61" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
 	<line x1="270" y1="109" x2="270" y2="140" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
 	<path d="M 270,61 A 1.5,2 90 1 1 270,73 M 270,73 A 1.5,2 90 1 1 270,85 M 270,85 A 1.5,2 90 1 1 270,97 M 270,97 A 1.5,2 90 1 1 270,109" style="fill-opacity:0;fill:rgb(0, 0, 0);stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
-	<text x="262" y="91" style="font-family:Arial;font-size:11px;text-anchor:end" dominant-baseline="middle" transform="rotate(0, 262, 91)">100 mH</text>
-	<text x="262" y="79" style="font-family:Arial;font-size:11px;text-anchor:end" dominant-baseline="middle" transform="rotate(0, 262, 79)">Solenoid</text>
 	<line x1="120" y1="60" x2="125" y2="60" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
 	<line x1="165" y1="60" x2="170" y2="60" style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
 	<path d="M 125,60 L 127,60 L 130,53 L 136,67 L 142,53 L 148,67 L 154,53 L 160,67 L 163,60 L 165,60" style="fill-opacity:0;fill:rgb(0, 0, 0);stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2" />
 	<text x="145" y="46" style="font-family:Arial;font-size:11px;text-anchor:middle" dominant-baseline="baseline" transform="rotate(0, 145, 46)">1 kΩ</text>
+	<text x="145" y="34" style="font-family:Arial;font-size:11px;text-anchor:middle" dominant-baseline="baseline" transform="rotate(0, 145, 34)">R1</text>
 	<ellipse cx="270" cy="140" rx="2" ry="2" style="fill-opacity:1;fill:rgb(0, 0, 0);stroke:rgb(0, 0, 0);stroke-width:2" />
 	<ellipse cx="270" cy="30" rx="2" ry="2" style="fill-opacity:1;fill:rgb(0, 0, 0);stroke:rgb(0, 0, 0);stroke-width:2" />
 </svg>

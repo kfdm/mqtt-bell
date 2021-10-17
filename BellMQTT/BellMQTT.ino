@@ -27,11 +27,16 @@ void setup()
 void onConnectionEstablished()
 {
   client.subscribe("devices/bell/ring", [](const String & topic, const String & payload) {
-    Serial.println("(From wildcard) topic: " + topic + ", payload: " + payload);
+    Serial.println(topic + ", payload: " + payload);
 
     digitalWrite(LED_PIN, HIGH);
     delay(100);
     digitalWrite(LED_PIN, LOW);    
+  });
+
+  client.subscribe("devices/bell/timer", [](const String & topic, const String & payload) {
+    Serial.println(topic + ", payload: " + payload);
+    // For future work  
   });
 }
 

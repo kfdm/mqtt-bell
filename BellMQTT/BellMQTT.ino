@@ -26,11 +26,11 @@ void setup()
 
 void onConnectionEstablished()
 {
-  client.subscribe("pomodoro/+/nag", [](const String & topic, const String & payload) {
+  client.subscribe("devices/bell/ring", [](const String & topic, const String & payload) {
     Serial.println("(From wildcard) topic: " + topic + ", payload: " + payload);
 
     digitalWrite(LED_PIN, HIGH);
-    delay(1000);
+    delay(100);
     digitalWrite(LED_PIN, LOW);    
   });
 }

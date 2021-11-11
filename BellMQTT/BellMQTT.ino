@@ -1,8 +1,7 @@
 #include <Arduino.h>
 #include "EspMQTTClient.h"
 #include "settings.h"
-
-#define LED_PIN 32
+#include "bell.h"
 
 EspMQTTClient client(
   WIFI_SSID,
@@ -14,11 +13,11 @@ EspMQTTClient client(
   MQTT_PORT
 );
 
+Bell bell = Bell(12);
+
 void setup()
 {
   Serial.begin(115200);
-
-  pinMode(LED_PIN, OUTPUT);
 
   client.enableDebuggingMessages();
   //client.enableHTTPWebUpdater();
@@ -28,15 +27,7 @@ void onConnectionEstablished()
 {
   client.subscribe("devices/bell/ring", [](const String & topic, const String & payload) {
     Serial.println(topic + ", payload: " + payload);
-
-    digitalWrite(LED_PIN, HIGH);
-    delay(100);
-    digitalWrite(LED_PIN, LOW);    
-  });
-
-  client.subscribe("devices/bell/timer", [](const String & topic, const String & payload) {
-    Serial.println(topic + ", payload: " + payload);
-    // For future work  
+    bell.ring();
   });
 }
 
